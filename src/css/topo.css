@@ -1,0 +1,24 @@
+header{
+    height: 60px;
+    background-color: rgb(5, 0, 19);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topoEsquerda{
+    padding: 0 5vw;
+}
+
+.topoDireita{
+    padding: 0 4vw;
+}
+.topoDireita a{
+    padding: 16px 20px;
+    border-radius: 4px;
+    transition: 0.15s ease-in-out;
+}
+.topoDireita a:hover{
+    background-color: rgb(3, 4, 110);
+    color:rgb(235, 235, 235) ;
+}
