@@ -8,9 +8,22 @@
     font-family: 'Mukta', sans-serif;
 }
 
+body{
+    background: url(../images/background1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.mae{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 h1{
     font-size: 80px;
 }
 h2{
     font-size: 50px;
+}
+p{
+    font-size: 18px;
+    padding: 5px 0;
+    letter-spacing: 0.8px;
 }
