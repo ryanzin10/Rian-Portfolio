@@ -9,41 +9,39 @@
     <link rel="stylesheet" href="src/css/topo.css">
     <link rel="stylesheet" href="src/css/home.css">
     <link rel="stylesheet" href="src/css/sobre.css">
+    <link rel="stylesheet" href="src/css/portfolio.css">
 
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
     <title>Rian Santos - Portfólio</title>
 </head>
 <body>
-
-    <header>
-        <div class="topoEsquerda">
-            <a href="">RIAN SANTOS</a>
-        </div>
-        <div class="topoDireita">
-            <a href="#home1" class="opcoes">HOME</a>
-            <a href="#sobre" class="opcoes">SOBRE</a>
-            <a href="" class="opcoes">PORTFÓLIO</a>
-            <a href="" class="opcoes">CONTATO</a>
-        </div>
-    </header>
-
     <div class="mae">
 
-        <section class="secao1">
-            <div class="home" id="home1">
-                <div class="conteudoHome">
-                    <div class="titulos">
-                        <h1>Rian Santos</h1>
-                        <h2>Desenvolvedor front-end<h2>
-                    </div>
-                    <div class="botaoVisitar">
-                        <span>Visitar portfólio</span>
-                    </div>
+        <header>
+            <div class="topoEsquerda">
+                <a href="">RIAN SANTOS</a>
+            </div>
+            <div class="topoDireita">
+                <a href="#home1" class="opcoes ativo">HOME</a>
+                <a href="#sobre" class="opcoes">SOBRE</a>
+                <a href="#portfolio1" class="opcoes">PORTFÓLIO</a>
+                <a href="" class="opcoes">CONTATO</a>
+            </div>
+        </header>
+
+        <div class="home" id="home1">
+            <div class="conteudoHome">
+                <div class="titulos">
+                    <h1>Rian Santos</h1>
+                    <h2>Desenvolvedor front-end<h2>
+                </div>
+                <div class="botaoVisitar">
+                    <span>Visitar portfólio</span>
                 </div>
             </div>
-        </section>
+        </div>
 
 
-        <section class="secao2">
             <div class="topico" id="sobre">
                 <div class="titulos">
                     <h2>Sobre</h2>
@@ -52,13 +50,20 @@
                     <img src="src/images/perfil.jpg" alt="Foto de Rian Santos">
                 </div>
                 <div class="sobreMim">
-                    <p>Rian Santos - desenvolvedor web front-end.<br> 20 anos de idade, sou de Estrela de Alagoas, Alagoas. Atualmente resido na mesma cidade supracitada.</p>
+                    <p>Rian Santos - desenvolvedor web front-end.<br> 20 anos de idade, sou de Estrela de Alagoas, Alagoas.</p>
                     <p>Apaixonado por tecnologia e amante do futebol.</p>
                     <p>Estudo desenvolvimento web desde 2019, sempre ligado em novas tecnologias e em aprimorar conhecimentos.</p>
                 </div>
             </div>
-        </section>
+
+            <div class="portfolio">
+                <div class="titulos">
+                    <h2 id="portfolio1">Portfólio</h2>
+                </div>
+            </div>
         
     </div>
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>
