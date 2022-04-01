@@ -9,11 +9,6 @@ header{
     justify-content: space-between;
 }
 
-.ativo{
-    background-color: rgb(3, 4, 110);
-    color:rgb(235, 235, 235) ;;
-}
-
 .topoEsquerda{
     padding: 0 5vw;
 }

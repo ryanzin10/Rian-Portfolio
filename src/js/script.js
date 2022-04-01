@@ -1,14 +1,22 @@
-const listaOpcoes = document.querySelectorAll('.opcoes')
+const listaProjetos = document.querySelectorAll('.projeto')
 
-listaOpcoes.forEach(opcoes =>{
-    opcoes.addEventListener('click', () => {
-        const idOpcaoSelecionada = opcoes.attributes.id.value
-        const opcaoAtiva = document.querySelector('.ativo')
-        opcaoAtiva.classList.remove('ativo')
+listaProjetos.forEach(projeto =>{
+    projeto.addEventListener('click', () => {
+        const idProjeto = projeto.attributes.id.value
+        if (idProjeto === "spotify"){
+            window.open('https://ryanzin10.github.io/Replica-Spotify/', '_blank');
+        }
 
-        //adicionar a classe ativo no item selecionado da lista
-        let cartaoOpcaoParaAtivar = document.getElementById(idOpcaoSelecionada)
-        cartaoOpcaoParaAtivar.classList.add('ativo')        
+        else if (idProjeto === "netflix"){
+            window.open('https://github.com/ryanzin10/replica-netflix', '_blank');
+        }
 
+        else if (idProjeto === "jokenpo2"){
+            window.open('https://github.com/ryanzin10/jokenpo-2', '_blank');
+        }
+
+        else if (idProjeto === "pokedex"){
+            window.open('https://github.com/ryanzin10/Pokedex', '_blank');
+        }
     })
 })

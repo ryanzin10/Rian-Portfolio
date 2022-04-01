@@ -1,3 +1,38 @@
 .portfolio{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colunas{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgb(228, 228, 228) solid;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(55, 0, 255, 0.082));
+    cursor: pointer;
+    transition: 0.10s ease-in-out;
+}
+.projeto:hover{
+    transform: scale(1.018);
+    background: linear-gradient(rgba(55, 0, 255, 0.082), rgba(0, 0, 0, 0.815));
+
 }
