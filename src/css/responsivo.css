@@ -14,8 +14,19 @@
         width: 28px;
         height: 2px;
         background-color: #fff;
-        margin: 4px 10px;
-    } 
+        margin: 8px 8px;
+        transition: 0.3s;
+    }
+    
+    .topoDireita2.ativo .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .topoDireita2.ativo .line2{
+        opacity: 0;
+    }
+    .topoDireita2.ativo .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
 
     .topoDireita{
         position: absolute;

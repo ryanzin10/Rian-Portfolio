@@ -4,7 +4,7 @@ listaProjetos.forEach(projeto =>{
     projeto.addEventListener('click', () => {
         const idProjeto = projeto.attributes.id.value
         if (idProjeto === "spotify"){
-            window.open('https://ryanzin10.github.io/Replica-Spotify/', '_blank');
+            window.open('https://github.com/ryanzin10/replica-spotify/', '_blank');
         }
 
         else if (idProjeto === "netflix"){
@@ -32,7 +32,7 @@ class MobileNavbar{
     }
 
     animateLinks(){
-        this.navLinks.forEach((link, index)=>{
+        this.navLinks.forEach((link)=>{
             link.style.animation
             ?(link.style.animation = "")
             :(link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
@@ -40,6 +40,7 @@ class MobileNavbar{
     }
     handleClick(){
         this.topoDireita.classList.toggle(this.activeClass);
+        this.topoDireita2.classList.toggle(this.activeClass);
         this.animateLinks();
     }
     addClickEvent(){
