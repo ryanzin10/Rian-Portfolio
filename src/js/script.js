@@ -20,3 +20,43 @@ listaProjetos.forEach(projeto =>{
         }
     })
 })
+
+class MobileNavbar{
+    constructor(topoDireita2, topoDireita, navLinks){
+        this.topoDireita2 = document.querySelector(topoDireita2);
+        this.topoDireita = document.querySelector(topoDireita);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = 'ativo';
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    animateLinks(){
+        this.navLinks.forEach((link, index)=>{
+            link.style.animation
+            ?(link.style.animation = "")
+            :(link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
+        });
+    }
+    handleClick(){
+        this.topoDireita.classList.toggle(this.activeClass);
+        this.animateLinks();
+    }
+    addClickEvent(){
+        this.topoDireita2.addEventListener("click", this.handleClick)
+    };
+
+    init(){
+        if(this.topoDireita2){
+            this.addClickEvent();
+        }
+       return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".topoDireita2",
+    ".topoDireita",
+    ".topoDireita a"
+);
+mobileNavbar.init();
