@@ -60,3 +60,24 @@ const mobileNavbar = new MobileNavbar(
     ".topoDireita a"
 );
 mobileNavbar.init();
+
+
+const listaRedes = document.querySelectorAll('.rede')
+
+listaRedes.forEach(contato =>{
+    contato.addEventListener('click', () => {
+        const idContato = contato.attributes.id.value
+        if (idContato === "github"){
+            window.open('https://github.com/ryanzin10/', '_blank');
+        }
+
+        else if (idContato === "linkedin"){
+            window.open('https://www.linkedin.com/in/ryanzin10/', '_blank');
+        }
+
+        else if (idContato === "insta"){
+            window.open('https://www.instagram.com/ryanzin10/', '_blank');
+        }
+
+    })
+})
