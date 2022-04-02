@@ -1,8 +1,4 @@
 @media(max-width: 900px) {
-    body{
-        overflow-x: hidden;
-    }
-
     h1{
         font-size: 60px;
     }
@@ -23,10 +19,10 @@
 
     .topoDireita{
         position: absolute;
-        top: 8vh;
+        top: 60px;
         right: 0;
         width: 30vw;
-        height: 92vh;
+        height: 90vh;
         background-color: rgb(5, 0, 19);
         display: flex;
         flex-direction: column;
@@ -39,6 +35,7 @@
         transform: translateX(0);
     }
     .topoDireita a{
+        padding: 16px 30px;
         opacity: 0;
     }
     @keyframes navLinkFade {
@@ -52,6 +49,9 @@
         }
     }
 
+    .sobre{
+        height: 100%;
+    }
     .sobreMim{
         width: 90vw;
         padding-left: 10px;
