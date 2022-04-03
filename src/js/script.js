@@ -18,6 +18,9 @@ listaProjetos.forEach(projeto =>{
         else if (idProjeto === "pokedex"){
             window.open('https://github.com/ryanzin10/Pokedex', '_blank');
         }
+        else if (idProjeto === "timesBR"){
+            window.open('https://github.com/ryanzin10/maiores-times-BR', '_blank');
+        }
     })
 })
 
