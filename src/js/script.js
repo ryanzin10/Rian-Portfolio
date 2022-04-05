@@ -83,5 +83,9 @@ listaRedes.forEach(contato =>{
             window.open('https://www.instagram.com/ryanzin10/', '_blank');
         }
 
+        else if (idContato === "wpp"){
+            window.open('https://api.whatsapp.com/send?phone=5582991373896&text=Ol%C3%A1%2C%20visitei%20seu%20portf%C3%B3lio%20e%20me%20interessei%20por%20suas%20habilidades!', '_blank')
+        }
+
     })
 })
