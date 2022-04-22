@@ -25,3 +25,11 @@
     border: 1px rgb(54, 2, 224) solid;
 
 }
+.contato #insta:hover{
+    background: linear-gradient(to right, #f78136,#d72b7f);
+    border: 1px coral solid;
+}
+.contato #wpp:hover{
+    background-color: #25c862;
+    border: 1px #25c862 solid;
+}
